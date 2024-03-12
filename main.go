@@ -8,10 +8,10 @@ import (
 )
 
 func main() {
-	fmt.Println(count(os.Stdin))
+	fmt.Println(Count(os.Stdin))
 }
 
-func count(r io.Reader) int {
+func Count(r io.Reader) int {
 	scanner := bufio.NewScanner(r)
 
 	scanner.Split(bufio.ScanWords)
